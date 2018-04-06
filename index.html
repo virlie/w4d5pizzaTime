@@ -13,18 +13,60 @@
       <h1>Super Portland Pizza Place</h1>
       <p>Pork belly tousled PBR&B air plant, la croix chicharrones brooklyn twee vexillologist mustache health goth. Cardigan offal pour-over flexitarian. Cardigan paleo air plant wolf. Fam celiac hell of meggings butcher flexitarian.</p>
       <br>
-      <form action="/action_page.php">
-        <div class="dropdown">
-          <button onclick=("image/omnivorePizza.jpg") class="dropbtn"><a href=("#image/omnivorePizza.jpg")>meat only</a>Meat Only</button>
-          <div id="myDropdown" class="dropdown-content">
+      <form action="pizzaToGo.html" class="tab" method="post" name="f1">
+        <p>What type of pizza would you like?</p>
 
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        <input type="radio" name="pizza" value="veggiesOnly"   onclick="runTotal();" />Mother Earth Pizza $10<br />
+        <input type="radio" name="pizza" value="meatsOnly"   onclick="runTotal();" />"You Don't Make Friends With Salad Pizza" $15<br />
+        <input type="radio" name="pizza" value="fishOnly"   onclick="runTotal();" />Mermaids Delight $20<br />
+        <input type="radio" name="pizza" value="Vegan"   onclick="runTotal();" />PETA Pizza $25.00<br /
+
+        <p>Would you like extra toppings? select them here:</p>
+        <input type="checkbox" name="toppings" value="extraBacon"   onclick="runTotal();" />Bacon $.25<br/>
+        <input type="checkbox" name="toppings" value="blackSauce"  onclick="runTotal();" />Squid Sauce on the Side $1.00<br/>
+        <input type="checkbox" name="toppings" value="extraSauce"  onclick="runTotal();" />Sauce on the Side $.25<br/>
+        <input type="checkbox" name="toppings" value="extraOnions"  onclick="runTotal();" />Onions $.25<br />
+        <input type="checkbox" name="toppings" value="anchovies"  onclick="runTotal();" />Anchovies $.25<br/>
+        <input type="checkbox" name="toppings" value="Octopus"  onclick="runTotal();" />Octopus $1.00<br/>
+        <input type="checkbox" name="toppings" value="extraShrimp"  onclick="runTotal();" />Shrimp $1.00<br/>
+        <input type="checkbox" name="toppings" value="peperoni"   onclick="runTotal();" />Peperoni $.25<br/>
+        <input type="checkbox" name="toppings" value="extraCheese"  onclick="runTotal();" />Extra Cheese $.25<br/>
+        <input type="checkbox" name="toppings" value="tomatoes"  onclick="runTotal();" />Sun Dried Tomatoes $.25<br />
+
+        <h3>Total</h3>
+        <p><input type="text" name=Total value="0"><br /> </p>
+        <input type="submit" value="submit" /> <input type ="reset">
+      </form>
+    </div>
+  </body>
+  <html>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <form class="order" action="index.html" method="post">
+              <h3>Make Your Own</h3>
+              <select style="width: 280px" id="Mobility" name="Mobility">
+                <option selected="">Please Select Crust</option>
+                <option>regular</option>
+                <option>thick</option>
+                <option>thin</option>
+                <option>gluten-free</option>
+              </select>
+            </form>
+          </form>
+
           </div>
         </div>
 
-      <br>
-      <input type="submit">
+     -->
 
 
 
@@ -37,16 +79,7 @@
         </select>
         <br><br>
         <input type="submit"> -->
-      </form>
-      <form class="order" action="index.html" method="post">
-        <h3>Make Your Own</h3>
-        <select style="width: 280px" id="Mobility" name="Mobility">
-          <option selected="">Please Select Crust</option>
-          <option>regular</option>
-          <option>thick</option>
-          <option>thin</option>
-          <option>gluten-free</option>
-        </select>
+
 
 
   </html>
