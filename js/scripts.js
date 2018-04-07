@@ -7,7 +7,7 @@ function runTotal() {
     var addTop = 0.25;
 
 
-    
+
 
     if(document.forms[0].pizza[0].checked == true) {
         total += veggiesOnly;
@@ -23,7 +23,7 @@ function runTotal() {
     }else if(document.forms[0].pizza[4].checked == true){
                 total += cheese;
     }
-    for(var i = 0; i < 11; i++){
+    for(var i = 0; i < 10; i++){
 
 
     if(document.forms[0].toppings[i].checked == true){
