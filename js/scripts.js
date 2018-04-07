@@ -1,3 +1,5 @@
+
+
 function runTotal() {
     var total = 0;
     var veggiesOnly = 10.0;
@@ -6,29 +8,31 @@ function runTotal() {
     var Vegan = 25.0;
     var addTop = 0.25;
 
-
-
-
     if(document.forms[0].pizza[0].checked == true) {
-        total += veggiesOnly;
+      total += veggiesOnly;
 
     }else if(document.forms[0].pizza[1].checked == true){
-        total += meatsOnly;
+      total += meatsOnly;
 
     }else if(document.forms[0].pizza[2].checked == true){
-        total += fishOnly;
+      total += fishOnly;
 
     }else if(document.forms[0].pizza[3].checked == true){
-            total += Vegan;
+      total += Vegan;
     }else if(document.forms[0].pizza[4].checked == true){
-                total += cheese;
+      total += cheese;
     }
     for(var i = 0; i < 10; i++){
 
 
-    if(document.forms[0].toppings[i].checked == true){
-            total += addTop;
-		}
+      if(document.forms[0].toppings[i].checked == true){
+        total += addTop;
+      }
     }
     document.f1.Total.value = total;
   }
+
+function Pizza( pizzaType, pizzaToppings ){
+   this.type = pizzaType;
+   this.toppings = pizzaTopings;
+}
