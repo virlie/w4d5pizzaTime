@@ -40,7 +40,7 @@ function runTotal() {
     this.size = pizzaSize;
   }
 
-    function forEach(pizza){
+    function calculatePrice(pizza){
 
    var pizzaType = ["pizza0","pizza1","pizza2","pizza3"];
    var pizzaToppings =  ["extraBacon","extraOnions","anchovies","pepperoni","extraCheese"];
