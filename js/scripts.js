@@ -28,22 +28,30 @@ function runTotal() {
       if(document.forms[0].toppings[i].checked == true){
         total += addTop;
       }
-      document.f1.Total.value = total;
+      document.pizzaTotal.Total.value = total;
     }
   }
+  let pizza = [];
+  let total;
+
+  function Pizza( pizzaType, pizzaToppings, pizzaSize){
+    this.pizzatype = pizzaType;
+    this.toppings = pizzaToppings;
+    this.size = pizzaSize;
+  }
+
+    function forEach(pizza){
+
+   var pizzaType = ["pizza0","pizza1","pizza2","pizza3"];
+   var pizzaToppings =  ["extraBacon","extraOnions","anchovies","pepperoni","extraCheese"];
+   var pizzaSize = ["small","medium","large"];
+
+
+ }
 
 
 
-  // function pizzaSize( pizzaSize) {
 
-
-
-  //
-  //   }
-  // }
-//   function Pizza( pizzaType, pizzaToppings ){
-//     this.type = pizzaType;
-//     this.toppings = pizzaTopings;
 //
 //
 //   }
