@@ -15,32 +15,35 @@ Created on: 6th of April 2018
 
   **Program will set up options for types of pizza and prices.**
   Example input: set up pizzaType
-  Example output: veggiesOnly,fishOnly,meatsOnly,Vegan
+  Example output: veggiesOnly,meatsOnly,glutenFree,Vegan.
 
   **Program will set up options for size of pizza.**
   Example input:set up size options
-  Example output: small, medium, large
+  Example output: small, medium, large.
 
   **Program will allow to add multiple toppings added to pizza.**
   Example input:set up different toppings options
-  Example output: 5 different pizzaToppings
+  Example output: 5 different pizzaToppings.
 
   **Program needs to fetch all the options checked and add the total.**
   Example input: veggiesOnly, small, add extraBacon,
   Example output: "Mother Earth", small, add Bacon, see total of every options checked.
 
-  **Program needs to 
+
+
+  **Program needs to
 
 
   //User Interface Logic//
 
   1.)User needs to be able to see what the pizza they chose with the price.
   Example input: chose pizza with 1 extra topping
-  Example output:shows total in box
+  Example output:shows pizza selected with topping selected.
 
-  2.)User needs to be
-  Example input:
-  Example output:( )
+  2.)User needs to see final order and confirm.
+  Example input: pizza0,extraBacon, small.
+  Example output: "Mother Earth, add Bacon, size small (please confirm)")
+
 
   Known Issues:
   None that I know of, if you see any issues, please contact me at virliejoyp@yahoo.com, and or send me a text message at 503-444-1808
