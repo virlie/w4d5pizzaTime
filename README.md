@@ -29,6 +29,8 @@ Created on: 6th of April 2018
   Example input: veggiesOnly, small, add extraBacon,
   Example output: "Mother Earth", small, add Bacon, see total of every options checked.
 
+  **Program needs to 
+
 
   //User Interface Logic//
 

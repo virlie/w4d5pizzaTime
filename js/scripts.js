@@ -9,34 +9,42 @@ function runTotal() {
     var glutenFree = 30.0;
     var addTop = 0.25;
 
-    if(document.forms[0].pizza[1].checked == true) {
+    if(document.forms[0].pizza[0].checked == true) {
       total += veggiesOnly;
 
-    }else if(document.forms[0].pizza[2].checked == true){
+    }else if(document.forms[0].pizza[1].checked == true){
       total += meatsOnly;
 
-    }else if(document.forms[0].pizza[3].checked == true){
+    }else if(document.forms[0].pizza[2].checked == true){
       total += glutenFree;
 
-    }else (document.forms[0].pizza[4].checked == true){
+    }else if(document.forms[0].pizza[3].checked == true){
       total += Vegan;
 
     }
-  }
-  function pizzaSize( pizzaSize) {
 
-  for(var i = 0; i < 5; i++){
+    for(var i = 0; i < 5; i++){
 
-    if(document.forms[0].toppings[i].checked == true){
-      total += addTop;
-
+      if(document.forms[0].toppings[i].checked == true){
+        total += addTop;
+      }
       document.f1.Total.value = total;
     }
   }
-  function Pizza( pizzaType, pizzaToppings ){
-    this.type = pizzaType;
-    this.toppings = pizzaTopings;
 
-    
-  }
-}
+
+
+  // function pizzaSize( pizzaSize) {
+
+
+
+  //
+  //   }
+  // }
+//   function Pizza( pizzaType, pizzaToppings ){
+//     this.type = pizzaType;
+//     this.toppings = pizzaTopings;
+//
+//
+//   }
+// }
