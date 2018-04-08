@@ -11,16 +11,29 @@ function runTotal() {
 
     if(document.forms[0].pizza[0].checked == true) {
       total += veggiesOnly;
+      pizza.pizzaType =0;
 
     }else if(document.forms[0].pizza[1].checked == true){
       total += meatsOnly;
+      pizza.pizzaType =1;
 
     }else if(document.forms[0].pizza[2].checked == true){
       total += glutenFree;
+      pizza.pizzaType=2;
 
     }else if(document.forms[0].pizza[3].checked == true){
       total += Vegan;
+      pizza.pizzaType=3;
 
+    }
+    if (document.form[0].pizza[0].checked == true){
+      total+= sizeSmall;
+    else if (document.form[0].pizza[0].checked == true){
+        total+= sizeMedium;
+    else if (document.form[0].pizza[0].checked == true){
+          total+= sizeLarge;
+    }
+    }
     }
 
     for(var i = 0; i < 5; i++){
@@ -33,6 +46,8 @@ function runTotal() {
   }
   let pizza = [];
   let total;
+
+
 
   function Pizza( pizzaType, pizzaToppings, pizzaSize){
     this.pizzatype = pizzaType;
