@@ -13,9 +13,13 @@ Created on: 6th of April 2018
 
   **Specification:**
 
-  **Program will set up options for types of pizza and prices.**
+  **Program will set up options for types of pizza**
   Example input: set up pizzaType
   Example output: veggiesOnly,meatsOnly,glutenFree,Vegan.
+
+  **Program will set up prices for said pizzaType.**
+  Example input:pizzaType0 = 10.0
+  Example output: pizzaType with price
 
   **Program will set up options for size of pizza.**
   Example input:set up size options

@@ -6,7 +6,7 @@ function runTotal() {
     var meatsOnly = 15.0;
     var glutenFree = 20.0;
     var Vegan = 25.0;
-    var glutenFree = 30.0;
+
     var addTop = 0.25;
 
     if(document.forms[0].pizza[0].checked == true) {
