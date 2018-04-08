@@ -26,7 +26,7 @@
       <p>What size would you like?</p>
       <input type="radio" name="pizzaSize" value="small"   onclick="runTotal();" />Personal Pan + $2.00<br />
       <input type="radio" name="pizzaSize" value="medium"   onclick="runTotal();" />"Let's Share" + $4.00<br />
-      <input type="radio" name="pizzaSize" value="Large"   onclick="runTotal();" />FamBam Thank You Ma'am! + $6.00<br />
+      <input type="radio" name="pizzaSize" value="large"   onclick="runTotal();" />FamBam Thank You Ma'am! + $6.00<br />
       <br>
       <p>Would you like extra toppings? </p>
 
@@ -39,7 +39,22 @@
       </div>
       <h3>Total</h3>
       <p><input type="text" name=Total value="0"><br /></p>
-      <input type="submit" value="submit" /> <input type ="reset">
+
+      <input type="button" value="submit" onclick="showOrder();" /> <input type ="reset">
+
+      <div>
+        <br /> <br />
+      <div>
+      <div>
+        <div>
+          Your Order:
+        </div>
+        <textarea rows="2" cols="64" name="orderOutput">
+Submit your order and then it will be confirmed here.
+      </textarea>
+    </div>
+
+
 
 
       <!-- <select class="checkbox" id ="pizzaTopings"> -->
