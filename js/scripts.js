@@ -1,4 +1,4 @@
-var pizza = new Pizza( 0, 0, [] );
+var myPizza = new Pizza( 0, 0, [] );
 var total;
 
 
@@ -17,38 +17,38 @@ function runTotal() {
 
   if(document.forms[0].pizza[0].checked == true) {
       total += veggiesOnly;
-      pizza.pizzaType =0;
+      myPizza.setType (0);
 
   }else if(document.forms[0].pizza[1].checked == true){
       total += meatsOnly;
-      pizza.pizzaType =1;
+      myPizza.setType (1);
 
   }else if(document.forms[0].pizza[2].checked == true){
       total += glutenFree;
-      pizza.pizzaType=2;
+      myPizza.setType(2);
 
   }else if(document.forms[0].pizza[3].checked == true){
       total += Vegan;
-      pizza.pizzaType=3;
+      myPizza.pizzaType(3);
 
   }
     if (document.forms[0].pizzaSize[0].checked == true){
       total+= sizeSmall;
-      pizza.size = 0;
+      myPizza.setSize = (0);
   }else if (document.forms[0].pizzaSize[1].checked == true){
         total+= sizeMedium;
-        pizza.size = 1;
+        myPizza.setSize = (1);
   }else if (document.forms[0].pizzaSize[2].checked == true){
           total+= sizeLarge;
-        pizza.size = 2;
+        myPizza.setSize = (2);
         }
   var pizzaToppings =  ["Bacon","Extra Onions","Anchovies","Pepperoni","Extra Cheese"];
 
-  pizza.toppings = [];
+  myPizza.toppings = [];
   for(var i = 0; i < 5; i++){
     if(document.forms[0].toppings[i].checked == true){
       total += addTop;
-      pizza.toppings.push( pizzaToppings[i])
+      myPizza.toppings.push( pizzaToppings[i])
     }
 
 
@@ -60,21 +60,46 @@ function runTotal() {
 
 
 function Pizza( pizzaType, pizzaSize, pizzaToppings){
-  this.pizzatype = pizzaType;
+  this.pizzaType = pizzaType;
   this.toppings = pizzaToppings;
   this.size = pizzaSize;
+}
+Pizza.prototype.setType = function (type){
+  this.pizzaType = type;
+}
+Pizza.prototype.getType = function (){
+  return this.pizzaType;
+}
+Pizza.prototype.setSize = function (type){
+    this.pizzaType = type;
+}
+Pizza.prototype.getSize = function (){
+    return this.pizzaType;
   }
 
 function showOrder(pizza){
   var pizzaType = ["Mother Earth","Carnivore's Dream","The Floor is Gluten","Vegan"];
   var pizzaSize = ["Personal Pan","Let's Share","FamBam"];
 
-  document.pizzaTotal.orderOutput.value = "this is a test"
+  var orderOut = "You ordered a ";
+
+  orderOut += pizzaType[myPizza.getType()];
+  orderOut += ", size ";
+  orderOut += pizzaSize[ myPizza.getSize()];
+  orderOut +=" with  ";
+  if ( myPizza.toppings.length ==0){
+    orderOut +=" no toppings";
+  }else{
+    orderOut += myPizza.toppings.join(",");
+
+  }
+  document.pizzaTotal.orderOutput.value = orderOut;
+
+}
 
 
 
 
- }
 
 
 

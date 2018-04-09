@@ -25,17 +25,29 @@ Created on: 6th of April 2018
   Example input:set up size options
   Example output: small, medium, large.
 
+  **Program will set up prices for the size of pizza.**
+  Example input;pizza0, $10.0
+  Example output:"Mother Earth Pizza for $10.0"
+
   **Program will allow to add multiple toppings added to pizza.**
   Example input:set up different toppings options
   Example output: 5 different pizzaToppings.
+
+  **Program will set up prices for the multiple toppings.**
+  Example input; size small
+  Example output:  Personal Pan + $2
 
   **Program needs to fetch all the options checked and add the total.**
   Example input: veggiesOnly, small, add extraBacon,
   Example output: "Mother Earth", small, add Bacon, see total of every options checked.
 
+  **When submit is pressed program will show summary of the order.**
+  Example input: pizza3, add Bacon, size small.
+  Example output: "You order a - The Floor is GLuten - size FamBam - with Bacon. "
 
 
-  **Program needs to
+
+
 
 
   //User Interface Logic//
